@@ -1,0 +1,35 @@
+.row, .header {
+    height: 12vh;
+}
+
+
+.game-one {
+    height: 35vh;
+}
+.game-two {
+    height: 35vh;
+}
+
+
+.cuadro {
+    transition: 0.5;
+}
+.red-box {
+    background-color: red;
+    opacity: 0.5;
+}
+
+.blue-box {
+    background-color: blue;
+    opacity: 0.5;
+}
+
+.green-box {
+    background-color: green;
+    opacity: 0.5;
+}
+
+.yellow-box {
+    background-color: yellow;
+    opacity: 0.5;
+}
