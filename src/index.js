@@ -6,7 +6,7 @@ const $estado = document.querySelector(".estado")
 
 
 
-document.querySelector(".inicio").onclick = comenzarJuego;
+document.querySelector(".inicio").onclick = comenzarJuego
 
 function comenzarJuego() {
 
@@ -71,7 +71,9 @@ function obtenerCuadroAleatorio () {
 
 function activarCuadro($cuadro) {
     $cuadro.style.opacity = 1;
-    
+    setTimeout(function() {
+        $cuadro.style.opacity = 0.5;
+    }, 500);
   }
 
 
@@ -97,7 +99,3 @@ function perder() {
     bloquearInputUsuario();
     actualizarEstado('Perdiste! Tocá "Empezar" para jugar de nuevo!');
   }
-
-  document.querySelectorAll(".cuadro").forEach(function ($cuadro) {
-    $cuadro.onclick = console.log("hola")
-    })
