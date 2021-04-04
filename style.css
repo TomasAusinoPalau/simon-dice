@@ -12,7 +12,7 @@
 
 
 .cuadro {
-    transition: 0.5;
+    transition-duration: 500ms;
 }
 .red-box {
     background-color: red;

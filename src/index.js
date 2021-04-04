@@ -6,7 +6,7 @@ const $estado = document.querySelector(".estado")
 
 
 
-document.querySelector(".inicio").onclick = comenzarJuego
+document.querySelector(".inicio").onclick = comenzarJuego;
 
 function comenzarJuego() {
 
@@ -63,17 +63,15 @@ function manejarInputUsuario(e) {
 }
 
 function obtenerCuadroAleatorio () {
-    const $cuadros = document.querySelectorAll(".cuadro")
-    const aleatorio = Math.floor(Math.random() * 3)
-    return $cuadros[aleatorio]
+    const $cuadros = document.querySelectorAll(".cuadro");
+    const aleatorio = Math.floor(Math.random() * 3);
+    return $cuadros[aleatorio];
       
 }
 
 function activarCuadro($cuadro) {
     $cuadro.style.opacity = 1;
-    setTimeout((function() {
-        $cuadro.style.opacity = 0.5;
-    }), 500);
+    
   }
 
 
@@ -97,5 +95,9 @@ function bloquearInputUsuario() {
 
 function perder() {
     bloquearInputUsuario();
-    actualizarEstado('Perdiste! Tocá "Empezar" para jugar de nuevo!', true);
+    actualizarEstado('Perdiste! Tocá "Empezar" para jugar de nuevo!');
   }
+
+  document.querySelectorAll(".cuadro").forEach(function ($cuadro) {
+    $cuadro.onclick = console.log("hola")
+    })
