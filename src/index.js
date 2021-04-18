@@ -22,7 +22,6 @@ function manejarRonda() {
 
     patronMaquina.forEach(function($cuadro, index) {
         const RETRASO_MS = (index + 1) * 1000;
-        console.log($cuadro)
         setTimeout(function() {
             activarCuadro($cuadro);
         }, RETRASO_MS)
